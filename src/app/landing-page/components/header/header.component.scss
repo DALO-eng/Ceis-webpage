@@ -32,24 +32,6 @@
       }
     }
   }
-  .lower-content {
-    background-color: var(--light-purple);
-    border-bottom: 3px solid var(--dark-purple);
-    font-size: 1.2rem;
-    .navbar-actions {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 4rem;
-      li {
-        list-style: none;
-        a {
-          text-decoration: none;
-          color: var(--white);
-        }
-      }
-    }
-  }
   .icons {
     font-size: 30px;
     color: black;

@@ -14,6 +14,29 @@ export class HeaderComponent implements OnInit {
   faInstagram = faInstagram;
   faWhatsapp = faWhatsapp;
   faFacebook = faFacebook;
+
+  items = [
+    {
+      label: 'Inicio',
+      routerLink: '/home',
+    },
+    {
+      label: 'Quienes somos',
+      routerLink: '/about-us',
+    },
+    {
+      label: 'Productos',
+      routerLink: '/products',
+    },
+    {
+      label: 'Servicios',
+      routerLink: '/services',
+    },
+    {
+      label: 'Calendario',
+      routerLink: '/calendar',
+    },
+  ];
   constructor() {}
 
   ngOnInit(): void {}

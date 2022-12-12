@@ -38,20 +38,24 @@
         </div>
       </div>
     </div>
-    <div class="navbar-container lower-content">
-      <ul class="navbar-actions">
-        <li><a href="#">Quienes somos</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Calendario</a></li>
-      </ul>
-      <button
-        pButton
-        pRipple
-        type="button"
-        label="Ingresa"
-        class="p-button-secondary"
-      ></button>
-    </div>
+    <p-menubar
+      [model]="items"
+      [style]="{
+        'background-color': 'var(--light-purple)',
+        'border-radius': '0',
+        border: 'none',
+        color: 'var(--white)'
+      }"
+    >
+      <ng-template pTemplate="end">
+        <button
+          pButton
+          pRipple
+          type="button"
+          label="Ingresa"
+          class="p-button-secondary"
+        ></button
+      ></ng-template>
+    </p-menubar>
   </nav>
 </header>

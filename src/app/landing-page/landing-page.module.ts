@@ -6,12 +6,18 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { AboutUsComponent } from './components/about-us/about-us.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
+import { LayoutComponent } from './components/layout/layout.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 import { ButtonModule } from 'primeng/button';
 import { CarouselModule } from 'primeng/carousel';
 import { DataViewModule } from 'primeng/dataview';
+import { MenubarModule } from 'primeng/menubar';
+import { MenuItem } from 'primeng/api';
+import { ProductsComponent } from './pages/products/products.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { CalendarComponent } from './pages/calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +26,10 @@ import { DataViewModule } from 'primeng/dataview';
     FooterComponent,
     AboutUsComponent,
     MainPageComponent,
+    LayoutComponent,
+    ProductsComponent,
+    ServicesComponent,
+    CalendarComponent,
   ],
   imports: [
     CommonModule,
@@ -28,6 +38,7 @@ import { DataViewModule } from 'primeng/dataview';
     CarouselModule,
     DataViewModule,
     ButtonModule,
+    MenubarModule,
   ],
 })
 export class LandingPageModule {}
