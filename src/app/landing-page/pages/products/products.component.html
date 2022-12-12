@@ -1,1 +1,74 @@
-<p>products works!</p>
+<section class="main-container">
+  <div class="section-header">
+    <h1>Nuestros productos</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure esse
+      laborum magni fugiat error doloremque reprehenderit ut dicta voluptatem?
+      Quae ab voluptas blanditiis labore, architecto officiis error optio
+      repellat omnis.
+    </p>
+  </div>
+  <div class="product-carousel">
+    <p-carousel
+      [value]="food"
+      [autoplayInterval]="5000"
+      [numVisible]="4"
+      [numScroll]="1"
+      [showIndicators]="false"
+    >
+      <ng-template pTemplate="header">
+        <h2>Fritos</h2>
+      </ng-template>
+      <ng-template let-singleFood pTemplate="item">
+        <div class="product-card">
+          <figure class="picture-container">
+            <img class="picture" [src]="singleFood.url" alt="test" />
+          </figure>
+          <h1>{{ singleFood.name }}</h1>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+  <div class="product-carousel">
+    <p-carousel
+      [value]="food"
+      [autoplayInterval]="5000"
+      [numVisible]="4"
+      [numScroll]="1"
+      [showIndicators]="false"
+    >
+      <ng-template pTemplate="header">
+        <h2>Confitería</h2>
+      </ng-template>
+      <ng-template let-singleFood pTemplate="item">
+        <div class="product-card">
+          <figure class="picture-container">
+            <img class="picture" [src]="singleFood.url" alt="test" />
+          </figure>
+          <h1>{{ singleFood.name }}</h1>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+  <div class="product-carousel">
+    <p-carousel
+      [value]="food"
+      [autoplayInterval]="5000"
+      [numVisible]="4"
+      [numScroll]="1"
+      [showIndicators]="false"
+    >
+      <ng-template pTemplate="header">
+        <h2>Varios</h2>
+      </ng-template>
+      <ng-template let-singleFood pTemplate="item">
+        <div class="product-card">
+          <figure class="picture-container">
+            <img class="picture" [src]="singleFood.url" alt="test" />
+          </figure>
+          <h1>{{ singleFood.name }}</h1>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</section>

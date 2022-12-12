@@ -1,0 +1,13 @@
+.product-card {
+  border: 1px solid var(--border-color);
+  border-radius: 2rem;
+  margin: 1rem;
+  text-align: center;
+  padding: 2rem 0;
+  .picture-container {
+    .picture {
+      width: 100%;
+      border-radius: 2rem;
+    }
+  }
+}

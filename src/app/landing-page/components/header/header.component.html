@@ -1,7 +1,11 @@
 <header>
   <nav class="navbar">
-    <div class="navbar-container">
-      <div class="navbar-content">
+    <div
+      class="navbar-container p-3 flex justify-content-between align-items-center flex-wrap"
+    >
+      <div
+        class="navbar-content flex justify-content-between align-items-center gap-5"
+      >
         <img
           class="main-logo"
           src="../../../../assets/images/ceis_logo_no_text.png"
@@ -9,44 +13,38 @@
         />
         <h1 class="title">Centro de Estudios de Ingeniería de Sistemas</h1>
       </div>
-      <div class="navbar-content">
-        <ul class="social-media">
+      <div
+        class="navbar-content flex justify-content-between align-items-center"
+      >
+        <ul class="p-0 flex justify-content-between align-items-center gap-5">
           <li>
             <a
               href="https://instagram.com/sammy_ceis?igshid=YmMyMTA2M2Y="
               target="_blank"
-              ><fa-icon class="icons" [icon]="faInstagram"></fa-icon
+              ><i class="pi pi-instagram text-4xl black"></i
             ></a>
           </li>
           <li>
             <a
               href="https://chat.whatsapp.com/BIPWRRdnYATKc0KKt6U1xM"
               target="_blank"
-              ><fa-icon class="icons" [icon]="faWhatsapp"></fa-icon
+              ><i class="pi pi-whatsapp text-4xl black"></i
             ></a>
           </li>
           <li>
             <a href="https://www.facebook.com/aceis.sistemas" target="_blank"
-              ><fa-icon class="icons" [icon]="faFacebook"></fa-icon
+              ><i class="pi pi-facebook text-4xl black"></i
             ></a>
           </li>
         </ul>
-        <div>
+        <div class="pl-3 uis-logo">
           <a href="https://uis.edu.co/" target="_blank"
             ><img src="../../../../assets/images/LogoUis.png" alt="Logo Uis"
           /></a>
         </div>
       </div>
     </div>
-    <p-menubar
-      [model]="items"
-      [style]="{
-        'background-color': 'var(--light-purple)',
-        'border-radius': '0',
-        border: 'none',
-        color: 'var(--white)'
-      }"
-    >
+    <p-menubar [model]="items">
       <ng-template pTemplate="end">
         <button
           pButton

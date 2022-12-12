@@ -1,1 +1,47 @@
-<p>about-us works!</p>
+<section class="main-container">
+  <div class="section-header">
+    <h1>Quienes somos...</h1>
+  </div>
+  <div class="flex">
+    <figure class="hero-image-container">
+      <img
+        class="hero-image"
+        src="../../../../assets/images/mascota.png"
+        alt=""
+      />
+    </figure>
+    <div class="hero-info">
+      <h2>Misión</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum
+        quidem excepturi deserunt? Quos unde in nesciunt, beatae deleniti ipsam
+        nihil alias corrupti tempora voluptatem autem ab, incidunt sit quod.
+      </p>
+      <h2 class="text-right">Visión</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium
+        eveniet amet ipsam fugiat consectetur sed delectus voluptate doloremque
+        ducimus in, reiciendis cum vero nemo ea? Soluta dolore exercitationem
+        blanditiis ipsa.
+      </p>
+    </div>
+  </div>
+  <p-dataView [value]="personal">
+    <ng-template let-member pTemplate="listItem">
+      <div>
+        <figure>
+          <img class="w-full" [src]="member.photo" alt="a" />
+        </figure>
+        <h2>{{ member.name }}</h2>
+      </div>
+    </ng-template>
+    <ng-template let-member pTemplate="gridItem">
+      <div class="col-12 md:col-4">
+        <figure>
+          <img [src]="member.photo" alt="a" class="w-full" />
+        </figure>
+        <h2>{{ member.name }}</h2>
+      </div>
+    </ng-template>
+  </p-dataView>
+</section>
