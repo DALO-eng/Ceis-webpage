@@ -1,0 +1,26 @@
+<p-carousel [value]="slides" [autoplayInterval]="5000">
+  <ng-template let-slide pTemplate="item">
+    <figure class="pictures">
+      <img class="picture" [src]="slide.image" alt="test" />
+    </figure>
+  </ng-template>
+</p-carousel>
+<section class="sections">
+  <h1>Ultimas noticias</h1>
+  <p-dataView [value]="news">
+    <ng-template let-slide pTemplate="listItem">
+      <div class="col-12 md:col-4">
+        <div class="news-card">
+          <img class="picture" [src]="slide.image" alt="test" />
+          <h2>{{ slide.title }}</h2>
+          <p>{{ slide.description }}</p>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template let-slide pTemplate="gridItem">
+      <div class="col-12 md:col-4">
+        <img class="picture" [src]="slide.image" alt="test" />
+      </div>
+    </ng-template>
+  </p-dataView>
+</section>
