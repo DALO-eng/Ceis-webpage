@@ -18,6 +18,7 @@ import { MenuItem } from 'primeng/api';
 import { ProductsComponent } from './pages/products/products.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
+import { DividerModule } from 'primeng/divider';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { CalendarComponent } from './pages/calendar/calendar.component';
     DataViewModule,
     ButtonModule,
     MenubarModule,
+    DividerModule,
   ],
 })
 export class LandingPageModule {}

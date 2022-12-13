@@ -1,4 +1,4 @@
-<p-carousel [value]="slides" [autoplayInterval]="5000">
+<p-carousel [value]="slides" [autoplayInterval]="5000" [circular]="true">
   <ng-template let-slide pTemplate="item">
     <figure class="pictures">
       <img class="picture" [src]="slide.image" alt="test" />

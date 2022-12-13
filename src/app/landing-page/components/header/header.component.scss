@@ -25,16 +25,20 @@
   }
 }
 
-@media (max-width: 1025px) {
-  .title {
-    display: none;
+@media (max-width: 1040px) {
+  .navbar {
+    .title {
+      display: none;
+    }
   }
 }
 @media (max-width: 768px) {
-  .main-logo {
-    width: 80px;
-  }
-  .uis-logo {
-    display: none;
+  .navbar {
+    .main-logo {
+      width: 80px;
+    }
+    .uis-logo {
+      display: none;
+    }
   }
 }
