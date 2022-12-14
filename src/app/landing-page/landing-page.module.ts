@@ -20,6 +20,8 @@ import { ServicesComponent } from './pages/services/services.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
 import { DividerModule } from 'primeng/divider';
 
+import { FullCalendarModule } from '@fullcalendar/angular';
+
 @NgModule({
   declarations: [
     HomePageComponent,
@@ -41,6 +43,7 @@ import { DividerModule } from 'primeng/divider';
     ButtonModule,
     MenubarModule,
     DividerModule,
+    FullCalendarModule,
   ],
 })
 export class LandingPageModule {}
